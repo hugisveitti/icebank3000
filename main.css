@@ -1,0 +1,132 @@
+html, body{
+    padding:0;
+    margin:0;
+    height: 150%;
+}
+
+header{
+    background-color: #dc1e35;
+    height:80px;
+    align-items: center;
+    padding-top: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+img{
+    height: 80px;
+    z-index: 2;
+    display: block;
+    margin: auto;
+}
+
+nav{
+    background-color: #eee;
+    height:70px;
+    position: fixed;
+    width: 100%;
+    bottom:0;
+    justify-content: space-around;
+}
+
+nav a{
+
+    /* width:25%; */
+    text-decoration: none;
+    color:black;
+
+}
+
+ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+nav ul{
+    margin-top: 0px;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+      justify-content: space-around;
+      -webkit-justify-content: space-around;
+      flex-wrap: nowrap;
+      -webkit-flex-wrap: nowrap;
+
+}
+nav ul a {
+
+    border-right: 1px solid black;
+    padding: 20px;
+    width:25%;
+    text-align: center;
+}
+
+ul a:last-child{
+    border-right: 0;
+}
+
+a{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    color:black;
+}
+
+li{
+    padding:0;
+    margin:0;
+}
+
+h1{
+    padding:0;
+    margin:0;
+}
+
+#content li{
+    border-bottom: 1px solid #888;
+    padding-top:10px;
+    padding-bottom: 10px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+#content{
+    position: absolute;
+    top:100px;
+    width: 100%;
+}
+
+body h2{
+    margin:0;
+    padding:0;
+    text-align: center;
+    background-color: #EEE;
+    display: block;
+    height: 120%;
+    padding:10px;
+    border-bottom: 1px solid #888;
+}
+
+i{
+    padding-right: 7px;
+}
+
+.infoBox{
+    margin: auto;
+    width:100%;
+    background-color: #DDD;
+    padding:10px;
+}
+
+.bigger{
+    font-size: 150px;
+}
+
+#credit-card{
+    text-align: center;
+}

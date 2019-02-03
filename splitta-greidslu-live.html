@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=411, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="dialog.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Splitta greiðslu demo</title>
+</head>
+<body onload="documentLoaded()">
+    <div id="dialogBox">
+        <div>Þú varst að kaupa í bónus. Þessi færsla fer í matarinnkaup.</div>
+        <div>Viltu setja færsluna á hóp?</div>
+        <button id="yes">Já</button>
+        <button id="later">Seinna</button>
+        <button id="no">Nei</button>
+    </div>
+</body>
+<script type="text/javascript">
+    var time = 15;
+    var timer = document.getElementById("timer");
+
+    function documentLoaded(){
+        setTimeout(dialogBox, 000);
+    }
+
+    function dialogBox(){
+        var dialogBox = document.getElementById("dialogBox");
+        dialogBox.style.visibility = "visible";
+        timer.innerHTML = time
+        <!-- decTime(); -->
+    }
+
+<!--
+    function decTime(){
+        console.log("dec")
+        console.log(timer.innerHTML)
+        if(time == 0){
+            var dialogBox = document.getElementById("dialogBox");
+            dialogBox.style.visibility = "hidden";
+        } else {
+            time--;
+            timer.innerHTML = time;
+            setTimeout(decTime,1000);
+        }
+
+    } -->
+</script>
+</html>
